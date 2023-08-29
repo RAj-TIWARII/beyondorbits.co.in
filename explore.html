@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Exploration</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: space-between; /* Create two columns */
+            align-items: center;
+            height: 100vh;
+        }
+
+        #video-left, #video-right {
+            width: 25%; /* Reduced width for both videos */
+            position: absolute;
+            height: auto; /* Maintain aspect ratio */
+            top: 50%; /* Center vertically */
+            transform: translateY(-50%); /* Adjust position */
+        }
+
+        #video-left {
+            left: 0;
+        }
+
+        #video-right {
+            right: 0;
+        }
+
+        #title-text {
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 36px;
+            color: #ffcc00;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        #content {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            text-align: justify;
+            max-width: 50%; /* Adjusted width for the explanation text */
+            margin: 0 auto; /* Center the text horizontally */
+        }
+
+        #content p:first-of-type::before {
+            content: "•";
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Title and content -->
+    <div id="content">
+        <div id="title-text">
+            SPACE EXPLORATION
+        </div>
+
+        <p>
+            Exploring the Cosmos: A Journey through Space Exploration
+        </p>
+        <p>
+            Space exploration has captivated the human imagination for centuries, propelling us to venture beyond our planet and explore the vast, mysterious expanse of the cosmos. This pursuit of knowledge, driven by curiosity and the quest for scientific discovery, has shaped the course of human history and opened doors to unprecedented advancements in technology, science, and our understanding of the universe.
+        </p>
+    </div>
+
+    <!-- Left video -->
+    <div id="video-left">
+        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/egDIqKLt2L4" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Right video -->
+    <div id="video-right">
+        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/MkRSmynqonM" frameborder="0" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
